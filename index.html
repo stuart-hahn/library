@@ -13,20 +13,26 @@
       <button id="new-book-btn">New Book</button>
       <dialog id="new-book-dialog">
         <form id="new-book-form">
-          <label for="title">Title:</label>
-          <input type="text" id="title" name="title" required />
-          <br />
-          <label for="author">Author:</label>
-          <input type="text" id="author" name="author" required />
-          <br />
-          <label for="pageCount">Number of Pages:</label>
-          <input type="number" id="pageCount" name="pageCount" />
-          <br />
-          <label for="readStatus">Read:</label>
-          <input type="checkbox" id="readStatus" name="readStatus" />
-          <br />
-          <button type="submit">Add Book</button>
-          <button type="button" id="cancel-btn">Cancel</button>
+          <div class="form-group">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-group">
+            <label for="author">Author:</label>
+            <input type="text" id="author" name="author" required />
+          </div>
+          <div class="form-group">
+            <label for="pageCount">Number of Pages:</label>
+            <input type="number" id="pageCount" name="pageCount" />
+          </div>
+          <div class="form-group">
+            <label for="readStatus">Read:</label>
+            <input type="checkbox" id="readStatus" name="readStatus" />
+          </div>
+          <div class="dialog-buttons">
+            <button type="submit">Add Book</button>
+            <button type="button" id="cancel-btn">Cancel</button>
+          </div>
         </form>
       </dialog>
       <div id="library-display"></div>
