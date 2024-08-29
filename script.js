@@ -21,13 +21,17 @@ document.getElementById("new-book-form").addEventListener("submit", (e) => {
 
 const myLibrary = [];
 
-function Book(title, author, pageCount = "unknown", readStatus = false) {
-  this.title = title;
-  this.author = author;
-  this.pageCount = pageCount;
-  this.readStatus = readStatus;
+class Book {
+  constructor(title, author, pageCount = "unknown", readStatus = false) {
+    this.title = title;
+    this.author = author;
+    this.pageCount = pageCount;
+    this.readStatus = readStatus;
+  }
 
-  this.toggleRead = () => (this.readStatus = !this.readStatus);
+  toggleRead() {
+    this.readStatus = !this.readStatus;
+  }
 }
 
 function addBookToLibrary() {
